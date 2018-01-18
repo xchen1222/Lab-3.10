@@ -5,8 +5,12 @@ public class ArrayMethods1 {
 	
 	public static void insertionSort(int [] list1)
 	{
-		if (list1[1] > list1[2]) ;
-		swap(list1 , 1 , 2) ;
+		for (int i=0 ; i < list1.length ; i++ )
+		{
+			swap (list1 , i , i+1) ;
+		}
+		
+		
 	}
 	
 	public static void selectionSort(double [] list1)
@@ -14,16 +18,22 @@ public class ArrayMethods1 {
 		
 	}
 	
-	public static void bubleSort(String [] list1)
+	public static void bubbleSort(String [] list1)
 	{
-		
+		for (int i=0 ; i < list1.length ; i++ )
+		{
+			
+		}
 	}
 	
 	public static void swap(int[] arr , int index1 , int index2)
 	{
 		int x = arr[index1] ;
+		if (index1 > index2)
+		{
 		arr[index1] = arr[index2] ;
 		arr[index2] = arr[x] ; 
+		}
 	}
 	
 }
