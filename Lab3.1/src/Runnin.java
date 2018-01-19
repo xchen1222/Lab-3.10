@@ -6,6 +6,11 @@ public class Runnin {
 		String[] list3 = {"c" , "b" , "a"} ; 
 	
 		ArrayMethods1.insertionSort(list1) ; 
+		for (int i = 0; i < list1.length; i++) 
+		{
+			
+			System.out.print(list1[i]);
+		}
 		ArrayMethods1.selectionSort(list2) ; 
 		ArrayMethods1.bubbleSort(list3) ; 
 	
